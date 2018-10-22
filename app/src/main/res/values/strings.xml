@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">sky-exercise</string>
+    <string name="titulo_lista">Cine SKY</string>
+    <string name="info_filmes">Uma seleção de filmes imperdíveis</string>
+    <string name="filme_invalido">Não foi possivel carregar filme</string>
+</resources>
