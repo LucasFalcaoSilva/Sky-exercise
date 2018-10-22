@@ -15,14 +15,14 @@ public class BaseService {
         clientBuilder.readTimeout(30, TimeUnit.SECONDS);
         clientBuilder.connectTimeout(30, TimeUnit.SECONDS);
 
-        HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor(new HttpLoggingInterceptor.Logger() {
-            @Override
-            public void log(String message) {
-                Log.d("Log", message);
-            }
-        });
-        interceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
-        clientBuilder.addInterceptor(interceptor);
+//        HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor(new HttpLoggingInterceptor.Logger() {
+//            @Override
+//            public void log(String message) {
+//                Log.d("Log", message);
+//            }
+//        });
+//        interceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
+//        clientBuilder.addInterceptor(interceptor);
 
         Retrofit retrofit = new Retrofit.Builder()
                 .client(clientBuilder.build())
